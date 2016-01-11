@@ -1,6 +1,8 @@
 bower_components/*
 deploy/*
 node_modules/*
-www/*
+www/libs/*
 .idea/*
 .idea/workspace.xml
+platforms/*
+plugins/*
