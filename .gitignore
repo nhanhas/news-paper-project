@@ -2,3 +2,5 @@ bower_components/*
 deploy/*
 node_modules/*
 www/*
+.idea/*
+.idea/workspace.xml
