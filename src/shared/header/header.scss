@@ -1,3 +1,71 @@
-.header{
+.header-body{
 
+  right: 0;
+  background-color: rgba(138,184,230,1);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  left:0;
+  box-shadow: 0 0px 11px 1px #888888;
+}
+
+
+.nav-opt{
+  margin-top: 10px;
+
+  color: white;
+
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+
+.header{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2em;
+
+
+}
+
+
+.opt-entry{
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+
+/* Customization */
+.news-title{
+  color: white;
+  font-size: 6.2rem;
+  margin-left: 35px;
+}
+@media screen and (max-width: 585px) {
+  .news-title{
+    font-size: 2.2rem;
+  }
+
+  .volume-label{
+    font-size: 1.0rem;
+  }
+  .data-label{
+    font-size: 1.0rem;
+  }
+}
+
+
+#aepan-logo{
+  max-width: 150px;
+  width: 100%;
+}
+
+.volume-label{
+  margin-left: 35px;
+}
+.data-label{
+  margin-right: 35px;
 }

@@ -1,4 +1,70 @@
-<div class="home"> HOME
-    <button ng-click="navigate('/view2')">Go to view2!</button>
+<!-- Float header-->
+<header></header>
 
-</div>
+
+<!-- News Paper Page INI -->
+<div class="Home" ng-class="{'animate':move}">
+
+    <!-- Director Section -->
+    <div class="row section">
+        <div class="col-xs-4 col-sm-5"><hr></div>
+        <div class="col-xs-4 col-sm-2 text-center"><span> Editorial </span></div>
+        <div class="col-xs-4 col-sm-5"><hr></div>
+    </div>
+
+    <!-- Editorial -->
+    <div class="row">
+        <div class="col-xs-12 diretora">
+            <!-- Photo portrait -->
+            <div class="col-xs-4 col-md-2 text-center">
+                <img class="diretora-portrait" src="assets/shared/diretora.png">
+            </div>
+
+            <!-- editorial line -->
+            <div class="col-xs-8 col-md-10 diretora-editorial-entry">
+                <!--<img class="diretora-editorial-source" src="assets/shared/imgss.jpg">-->
+                <span class="editorial-entry-title">Diretora</span>
+                <!-- News Description -->
+                <span class="editorial-entry-description">Veja aqui o editorial</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="row section">
+        <div class="col-xs-4 col-sm-5"><hr></div>
+        <div class="col-xs-4 col-sm-2 text-center"><span> Notícias </span></div>
+        <div class="col-xs-4 col-sm-5"><hr></div>
+    </div>
+
+    <!-- News Feed -->
+    <div class="row">
+        <!-- News Lines -->
+        <div class="col-xs-12 col-md-6" ng-repeat="newsEntry in newsArray">
+            <div class="news-entry" ng-click="navigateToNews(newsEntry)">
+                <!-- News Title -->
+                <span class="news-entry-title">{{newsEntry.titulo}}</span>
+                <!-- News Description -->
+                <span class="news-entry-description">{{newsEntry.descricao}}</span>
+                <!-- News Tile Image-->
+                <img class="news-entry-source" ng-show="newsEntry.image !== ''" src="{{newsEntry.image}}">
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- Agrupamento de Escolas -->
+    <hr>
+    <div class="row grp-footer">
+        <div class="col-xs-12 text-center">
+            <span>Agrupamento de Escolas</span>
+        </div>
+        <div class="col-xs-12 text-center">
+            <span>Professor António da Natividade</span>
+        </div>
+    </div>
+    <hr>
+
+</div><!-- News Paper Page END --> 

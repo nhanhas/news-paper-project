@@ -1,7 +1,127 @@
-.home{
-  margin-top: 100px ;
-  background-color: yellow;
-  >div {
-    border: 10px solid green;
+.Home{
+  margin-top: 180px;
+  position: relative;
+  right :0;
+  display: block !important;
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+
+
+
+
+.Home.animate {
+  right: 200px;
+}
+
+.section{
+  font-size: 2.0rem;
+  margin-bottom: 15px;
+}
+
+.news-entry{
+  position: relative;
+  height: 250px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  -moz-box-shadow:0px 0px 4px 1px #888888;
+  -webkit-box-shadow: 0px 0px 4px 1px #888888;
+  box-shadow: 0px 0px 4px 1px #888888;
+
+}
+.news-entry-source{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 4px;
+}
+
+.diretora{
+  margin-bottom: 80px;
+}
+
+.diretora-portrait{
+  border-radius: 50%;
+  max-width: 100px;
+  width: 100%;
+  -moz-box-shadow:0px 0px 4px 1px #888888;
+  -webkit-box-shadow: 0px 0px 4px 1px #888888;
+  box-shadow: 0px 0px 4px 1px #888888;
+
+}
+
+.diretora-editorial-entry{
+  position: relative;
+  height: 100px;
+  padding: 0px;
+  -moz-box-shadow:0px 0px 4px 1px #888888;
+  -webkit-box-shadow: 0px 0px 4px 1px #888888;
+  box-shadow: 0px 0px 4px 1px #888888;
+
+  cursor: pointer;
+}
+
+.diretora-editorial-source{
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+span{
+  font: 900 16px/1.25em Merriweather,Georgia,serif;
+}
+
+.col-divider {
+  border-left:1px solid #38546d;
+  border-right:1px solid #16222c;
+  height:80px;
+  position:absolute;
+  right:249px;
+  top:10px;
+}
+
+
+.editorial-entry-title{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.editorial-entry-description{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
+.news-entry-title{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.news-entry-description{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
+.footer{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 535px) {
+  .Home{
+    margin-top: 120px;
+  }
+
+  .news-entry-source{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    max-height: 130px;
   }
 }
