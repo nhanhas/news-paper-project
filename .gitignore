@@ -1,4 +1,4 @@
-bower_components/
-deploy/
-node_modules/
-www/
+bower_components/*
+deploy/*
+node_modules/*
+www/*
