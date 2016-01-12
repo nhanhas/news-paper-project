@@ -1,11 +1,18 @@
+.mobile-header {
+  height: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #8ab8e6; }
+
 .header-body {
   right: 0;
   background-color: #8ab8e6;
   position: fixed;
-  top: 0;
+  top: 40px;
   z-index: 9999;
   left: 0;
-  box-shadow: 0 0px 11px 1px #888888; }
+  box-shadow: 0 8px 11px -5px #888888; }
 
 .nav-opt {
   margin-top: 10px;

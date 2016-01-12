@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.scss'],
-                    dest: 'deploy/',
+                    dest: 'www/',
                     ext: '.css'
                 }]
             }
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'bower_components/',
                     src: ['**'],
-                    dest: 'deploy/libs'
+                    dest: 'www/libs'
                 }]
             },
             scripts: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**','!**/*.scss', '!**/*.html'],
-                    dest: 'deploy/'
+                    dest: 'www/'
                 }]
             },
             html: {
@@ -55,14 +55,14 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**','!**/*.scss', '!**/*.js'],
-                    dest: 'deploy/'
+                    dest: 'www/'
                 }]
             }
         },
         uglify: {
             build: {
                 src: 'src/<%= pkg.name %>.js',
-                dest: 'deploy/<%= pkg.name %>.min.js'
+                dest: 'www/<%= pkg.name %>.min.js'
             }
         }
 
