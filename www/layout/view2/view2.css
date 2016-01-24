@@ -4,7 +4,8 @@
   right: 0;
   display: block !important;
   -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s; }
+  transition: all linear 0.5s;
+  margin-bottom: 50px; }
 
 @media screen and (max-width: 535px) {
   .view2 {
