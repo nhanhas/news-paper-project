@@ -53,3 +53,10 @@ In your Gruntfile.js, you need to set 'deploy' to 'www' name, because phonegap w
 Once its built run '$ phonegap serve' and check out the magic!
 
 
+FOR APK BUILD WITH CORDOVA
+- install android studio
+- make $ADNROID_HOME and $PATH(with $ANDROID_HOME/tools and $ANDROID_HOME/platform-tools)
+- $android to install Android SDK 22 (at least)
+-cordova build android --verbose
+- enjoy your .apk
+
